@@ -277,6 +277,7 @@ export class News extends Component {
         return (
             <div className='container my-3'>
                 <h2>NewsBytes - Top Headlines</h2>
+                {this.state.articles.map((element) => {console.log(element)})}
                 <div className="row my-3">
                     <div className="col-md-4">
                         <NewsItem title="my title" description="my description" imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQ4m1DTE_4drPgOJZjDb5y8UMHkuQMzlj9_zgLQBaKA&s"/>
