@@ -9,13 +9,13 @@ export default class App extends Component {
     return (
       <div>
         <Router>
-          <Navbar />
+        <Navbar/>
           <Routes>
-            <Route path="/" element={<News key="general" pageSize={9} country="in" category="general" />} />
+            <Route exact path="/" element={<News key="general" pageSize={9} country="in" category="general" />} />
             <Route exact path="/business" element={<News key="business" pageSize={9} country="in" category="business" />} />
           </Routes>
         </Router>
-        {/* <News pageSize={9} country="in" category="science" /> */}
+        {/* <News  pageSize={9} country="in" category="science"  /> */}
       </div>
     )
   }
