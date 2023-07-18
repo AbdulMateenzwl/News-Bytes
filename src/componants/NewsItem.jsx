@@ -12,7 +12,7 @@ export class NewsItem extends Component {
 
         return (
             <div className='my-3'>
-                 <div className="card" style={{ width: "18rem" }}>
+                 <div className="card" >
                     <img src={!imageUrl?"https://demofree.sirv.com/nope-not-here.jpg":imageUrl}  className="card-img-top" alt={content} 
                     onError={({ currentTarget }) => {
                         currentTarget.onerror = null; 
