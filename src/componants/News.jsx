@@ -31,8 +31,8 @@ export class News extends Component {
         document.title = this.captalizeFirstLetter(props.category) + " - NewsBytes";
     };
 
-    async updateNews(pageNo) {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=367be74b571d49c8ab6155190d0e4b47&page=1&pageSize=${this.props.pageSize}`
+    async updateNews() {
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=367be74b571d49c8ab6155190d0e4b47&page=1&page=${this.state.page}&pageSize=${this.props.pageSize}`
         this.setState({ loading: true });
         let data = await fetch(url);
         let parsedData = await data.json();

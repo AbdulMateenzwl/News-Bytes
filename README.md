@@ -2,7 +2,7 @@
 
 NewsByte is a modern and user-friendly web application built with React that provides the latest news from various categories. Stay informed about current events, sports, technology, entertainment, and much more. With NewsByte, you can easily browse news articles, search for specific topics, and stay up-to-date with the world's happenings.
 
-![NewsByte Screenshot](screenshot.png)
+![NewsByte Screenshot](./public/screenshot.png)
 
 ## Features
 
@@ -22,7 +22,8 @@ NewsByte is a modern and user-friendly web application built with React that pro
 
 ## Demo
 
-Check out the live demo of NewsByte [here](https://your-demo-link.com).
+<!-- Check out the live demo of NewsByte [here](https://your-demo-link.com). -->
+Demo is not yet available due to some hosting issues.
 
 ## Installation and Usage
 
