@@ -15,15 +15,13 @@ export class Navbar extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item"><a className="nav-link " href="/">Home</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/">Link</a></li>
-                                {/* <li><Link className="nav-link" to="/business">Buisness</Link></li> */}
-                                <li className="nav-item"><a className="nav-link" href="/">Entainment</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/">General</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/">Health</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/">Science</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/">Sports</a></li>
-                                <li className="nav-item"><a className="nav-link" href="/">Technology</a></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">General</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/business">Buisness</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Entainment</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Health</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Science</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Sports</Link></li>
+                                <li className="nav-item"><Link className="nav-link" to="/">Technology</Link></li>
 
                             </ul>
                             {/* <form className="d-flex" role="search">
