@@ -4,20 +4,20 @@ import Navbar from './componants/Navbar';
 import News from './componants/News';
 import { Switch, Route } from 'react-router-dom';
 export default class App extends Component {
-
+  pageSize = 9;
   render() {
     return (
       <div>
         <Navbar />
         <Switch>
           <Route exact path="/"  >
-            <News key="general" pageSize={9} country="in" category="health" />
+            <News key="general" pageSize={this.pageSize} country="in" category="health" />
           </Route>
           <Route exact path="/business"  >
-            <News key="business" pageSize={9} country="in" category="business" />
+            <News key="business" pageSize={this.pageSize} country="in" category="business" />
           </Route>
         </Switch>
-        {/* <News  pageSize={9} country="in" category="science"  /> */}
+        {/* <News  pageSize={this.pageSize} country="in" category="science"  /> */}
       </div>
     )
   }
