@@ -292,24 +292,29 @@ export class News extends Component {
         document.title = this.captalizeFirstLetter(props.category) + " - NewsBytes";
     };
 
-    async updateNews() {
-        try{
-            let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=367be74b571d49c8ab6155190d0e4b47&page=1&page=${this.state.page}&pageSize=${this.props.pageSize}`
-            this.setState({ loading: true });
-            let data = await fetch(url);
-            let parsedData = await data.json();
-            this.setState({
-                articles: parsedData.articles,
-                totalArticles: parsedData.totalResults,
-                loading: false
-            })
-        }
-        catch(error){
-            alert('if You are seeing this msg it means API is not working the data that has been displayed is saved data. Thanks for understanding. if you want to know further pls contact me on my email id: abdulmateenzwl@gmail.com')
-            this.setState({
-                loading: false
-            })
-        }
+    // async updateNews() {
+        updateNews(){
+        // try{
+        //     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=367be74b571d49c8ab6155190d0e4b47&page=1&page=${this.state.page}&pageSize=${this.props.pageSize}`
+        //     this.setState({ loading: true });
+        //     let data = await fetch(url);
+        //     let parsedData = await data.json();
+        //     this.setState({
+        //         articles: parsedData.articles,
+        //         totalArticles: parsedData.totalResults,
+        //         loading: false
+        //     })
+        // }
+        // catch(error){
+        //     alert('if You are seeing this msg it means API is not working the data that has been displayed is saved data. Thanks for understanding. if you want to know further pls contact me on my email id: abdulmateenzwl@gmail.com')
+        //     this.setState({
+        //         loading: false
+        //     })
+        // }
+        alert('if You are seeing this msg it means API is not working the data that has been displayed is saved data. Thanks for understanding. if you want to know further pls contact me on my email id: abdulmateenzwl@gmail.com')
+        // this.setState({
+        //     loading: false
+        // })
     }
 
     async componentDidMount() {
